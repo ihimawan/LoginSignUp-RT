@@ -4,7 +4,43 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
+	<filter>
+		<filter-name>test</filter-name>
+		<display-name>test</display-name>
+		<description></description>
+		<filter-class>com.ih.controller.test</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>test</filter-name>
+		<url-pattern>/test</url-pattern>
+	</filter-mapping>
+	
+	<servlet>
+		<servlet-name>JerseyController</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>com.ih.rest.jersey</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
 
+	<servlet>
+		<servlet-name>RestController</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>CarController</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
 	<servlet>
 		<servlet-name>GetController</servlet-name>
 		<display-name>GetController</display-name>
@@ -29,6 +65,24 @@
 		<description></description>
 		<servlet-class>com.ih.controller.ProfileController</servlet-class>
 	</servlet>
+
+	
+	<servlet-mapping>
+		<servlet-name>JerseyController</servlet-name>
+		<url-pattern>/jersey/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RestController</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	
+		<servlet-name>CarController</servlet-name>
+		<url-pattern>/car/*</url-pattern>
+	</servlet-mapping>
+	
 	<servlet-mapping>
 		<servlet-name>GetController</servlet-name>
 		<url-pattern>/GetController</url-pattern>
@@ -45,6 +99,7 @@
 		<servlet-name>ProfileController</servlet-name>
 		<url-pattern>/ProfileController</url-pattern>
 	</servlet-mapping>
+
 
 	<welcome-file-list>
 		<welcome-file>home.jsp</welcome-file>

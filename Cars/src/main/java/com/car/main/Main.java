@@ -65,7 +65,7 @@ public class Main {
 //
 //		cd.create(car);
 		
-		List<Car> list = cd.getCarsFilterByModel("fds");
+		List<Car> list = cd.read();
 		for (Car c: list){
 			System.out.println(c.getVIN());
 		}
@@ -73,6 +73,8 @@ public class Main {
 		if (list.isEmpty()){
 			System.out.println("none available.");
 		}
+		
+//		System.out.println(cd.getByVIN("1112").getModel());
 		
 	}
 

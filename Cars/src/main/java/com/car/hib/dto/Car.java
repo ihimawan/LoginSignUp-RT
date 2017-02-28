@@ -17,7 +17,7 @@ public class Car implements Dto{
 	private int year;
 	private float price;
 	private String color;
-	
+	private String manufacturer;
 
 	public Car() {
 
@@ -31,6 +31,15 @@ public class Car implements Dto{
 		this.price = price;
 		this.color = color;
 	}
+	
+	public String getManufacturer() {
+		return manufacturer;
+	}
+
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
+	}
+	
 	public String getVIN() {
 		return VIN;
 	}

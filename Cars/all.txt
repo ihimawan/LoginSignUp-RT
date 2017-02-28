@@ -1,0 +1,3 @@
+2017-02-23 11:35:54.056 [main] DEBUG com.car.hib.dao.CarDao - Debug test from car
+2017-02-23 11:35:54.059 [main] INFO  com.car.hib.dao.CarDao - Read from Car table has begun
+2017-02-23 11:35:54.163 [main] INFO  com.car.hib.dao.CarDao - Read from Car table is successful

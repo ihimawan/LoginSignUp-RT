@@ -10,6 +10,10 @@ import org.hibernate.Transaction;
 import com.car.hib.dto.User;
 
 public class UserDao extends HibernateDao{
+	
+	
+	public UserDao(){
+	}
 
 	@Override
 	public boolean create(Object o) {
