@@ -15,7 +15,7 @@
 		<url-pattern>/test</url-pattern>
 	</filter-mapping>
 	
-	<servlet>
+<!-- 	<servlet>
 		<servlet-name>JerseyController</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		<init-param>
@@ -24,7 +24,7 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-
+ -->
 	<servlet>
 		<servlet-name>RestController</servlet-name>
 		<servlet-class>
@@ -66,11 +66,11 @@
 		<servlet-class>com.ih.controller.ProfileController</servlet-class>
 	</servlet>
 
-	
+<!-- 	
 	<servlet-mapping>
 		<servlet-name>JerseyController</servlet-name>
 		<url-pattern>/jersey/*</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	
 	<servlet-mapping>
 		<servlet-name>RestController</servlet-name>

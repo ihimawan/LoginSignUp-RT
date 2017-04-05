@@ -25,7 +25,6 @@ public class JerseyController {
 		
 		List<Car> list = null;
 		
-		
 		if (model.equals("null")){
 			list = cd.read();
 		}else{
