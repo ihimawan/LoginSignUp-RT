@@ -10,6 +10,13 @@ public class MyApplicationSecurityContext implements SecurityContext {
 	
 	private User user;
 	private String scheme;
+	
+
+	public MyApplicationSecurityContext(User user, String scheme) {
+		super();
+		this.user = user;
+		this.scheme = scheme;
+	}
 
 	//the scheme used, here it will be HTTP Basic Auth.
 	public String getAuthenticationScheme() {

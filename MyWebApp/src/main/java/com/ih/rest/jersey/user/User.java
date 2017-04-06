@@ -1,12 +1,13 @@
 package com.ih.rest.jersey.user;
 
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.List;
 
 public class User implements Principal{
 
 	private String id, firstName, lastName, login, email, password;
-    private List<String> role;
+    private List<String> role = new ArrayList<String>();
     
 	public String getId() {
 		return id;
