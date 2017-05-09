@@ -15,6 +15,7 @@ public class CarController {
 	CarDao cd = new CarDao();
 
 
+	//testing here
 	@RequestMapping(value="/test")
 	public ModelAndView test(){
 		ModelAndView model = new ModelAndView("result");
